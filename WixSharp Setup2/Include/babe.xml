@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<BabePrefs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<!-- JUMPKINGPLUS FIX FOR HARDCODED IN BABE ENDING, GJ ERIK -->
-	<new_babe>42</new_babe>				<!-- JumpKing.GameManager.MultiEnding.NormalEnding -->
-	<new_babe_plus>99</new_babe_plus>	<!-- JumpKing.GameManager.MultiEnding.NewBabePlusEnding -->
-	<owl_babe>153</owl_babe>			<!-- JumpKing.GameManager.MultiEnding.OwlEnding -->
-</BabePrefs>
