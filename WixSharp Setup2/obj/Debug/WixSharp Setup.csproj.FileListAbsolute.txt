@@ -1,0 +1,18 @@
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharpSetup.exe.config
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharpSetup.exe
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharpSetup.pdb
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\BootstrapperCore.dll
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharp.dll
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharp.Msi.dll
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharp.UI.dll
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\BootstrapperCore.xml
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharp.xml
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharp.Msi.xml
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\bin\Debug\WixSharp.UI.xml
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\obj\Debug\WixSharp Setup.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\obj\Debug\WixSharp Setup.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\obj\Debug\WixSharp Setup.csproj.CopyComplete
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\obj\Debug\WixSharpSetup.exe
+C:\Users\andre\source\repos\JumpKingPlusInstaller\WixSharp Setup2\obj\Debug\WixSharpSetup.pdb
