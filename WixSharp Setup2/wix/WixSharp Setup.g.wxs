@@ -6,15 +6,15 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="1c3139b9-5520-49dc-9219-1f0ba2a71528" Name="JumpKingPlus" Language="1033" Codepage="Windows-1252" Version="1.5.0" UpgradeCode="1c3139b9-5520-49dc-9219-1f0b92570528" Manufacturer="Phoenixx19">
+  <Product Id="1c3139b9-5520-49dc-9219-1f0ba2d73528" Name="JumpKingPlus" Language="1033" Codepage="Windows-1252" Version="1.8.2" UpgradeCode="1c3139b9-5520-49dc-9219-1f0b92570528" Manufacturer="Phoenixx19">
     <Package InstallerVersion="200" Compressed="yes" Description="An enhanced version of Jump King." Platform="x86" SummaryCodepage="Windows-1252" InstallPrivileges="elevated" InstallScope="perMachine" Languages="1033" />
     <Media Id="1" Cabinet="JumpKingPlus.cab" EmbedCab="yes" />
 
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder" Name="ProgramFilesFolder">
-        <Directory Id="ProgramFilesFolder.Steam" Name="Steam">
-          <Directory Id="ProgramFilesFolder.Steam.steamapps" Name="steamapps">
-            <Directory Id="ProgramFilesFolder.Steam.steamapps.common" Name="common">
+        <Directory Id="Steam" Name="Steam">
+          <Directory Id="steamapps" Name="steamapps">
+            <Directory Id="common" Name="common">
               <Directory Id="INSTALLDIR" Name="Jump King">
 
                 <Component Id="Component.babe.xml_3856833599" Guid="1c3139b9-5520-49dc-9219-1f0b4195bb42">
@@ -27,10 +27,6 @@
 
                 <Component Id="Component.DiscordRPC.dll_1190609765" Guid="1c3139b9-5520-49dc-9219-1f0b0c2557d7">
                   <File Id="DiscordRPC.dll_1190609765" Source="Include\DiscordRPC.dll" />
-                </Component>
-
-                <Component Id="Component.DiscordRPC.xml_425935718" Guid="1c3139b9-5520-49dc-9219-1f0b36ddbb22">
-                  <File Id="DiscordRPC.xml_425935718" Source="Include\DiscordRPC.xml" />
                 </Component>
 
                 <Component Id="Component.JumpKing.exe_3849321381" Guid="1c3139b9-5520-49dc-9219-1f0bec598661">
@@ -47,10 +43,6 @@
 
                 <Component Id="Component.Newtonsoft.Json.dll_832779762" Guid="1c3139b9-5520-49dc-9219-1f0b4d52c9d2">
                   <File Id="Newtonsoft.Json.dll_832779762" Source="Include\Newtonsoft.Json.dll" />
-                </Component>
-
-                <Component Id="Component.Newtonsoft.Json.xml_832714238" Guid="1c3139b9-5520-49dc-9219-1f0bb4448290">
-                  <File Id="Newtonsoft.Json.xml_832714238" Source="Include\Newtonsoft.Json.xml" />
                 </Component>
 
                 <Component Id="Component.JK_Plus_Logo.xnb_3497904198" Guid="1c3139b9-5520-49dc-9219-1f0b3f7d1041">
@@ -105,7 +97,7 @@
     <CustomAction Id="CancelRequestHandler" BinaryKey="WixSharp_InitRuntime_Action_File" DllEntry="CancelRequestHandler" Return="check" Impersonate="no" Execute="deferred" />
     <CustomAction Id="WixSharp_Load_Action" BinaryKey="WixSharp_InitRuntime_Action_File" DllEntry="WixSharp_Load_Action" Return="check" Execute="immediate" />
     <CustomAction Id="WixSharp_BeforeInstall_Action" BinaryKey="WixSharp_InitRuntime_Action_File" DllEntry="WixSharp_BeforeInstall_Action" Return="check" Execute="immediate" />
-    <CustomAction Id="Set_WixSharp_AfterInstall_Action_Props" Property="WixSharp_AfterInstall_Action" Value="WixSharp_AfterInstall_Handlers=[WixSharp_AfterInstall_Handlers];WIXSHARP_RUNTIME_DATA=[WIXSHARP_RUNTIME_DATA];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductName=[ProductName];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductCode=[ProductCode];ADDLOCAL=[ADDLOCAL];ADDFEATURES=[ADDFEATURES]" />
+    <CustomAction Id="Set_WixSharp_AfterInstall_Action_Props" Property="WixSharp_AfterInstall_Action" Value="WixSharp_AfterInstall_Handlers=[WixSharp_AfterInstall_Handlers];WIXSHARP_RUNTIME_DATA=[WIXSHARP_RUNTIME_DATA];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductName=[ProductName];FOUNDPREVIOUSVERSION=[FOUNDPREVIOUSVERSION];MsiLogFileLocation=[MsiLogFileLocation];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductCode=[ProductCode];ADDLOCAL=[ADDLOCAL];ADDFEATURES=[ADDFEATURES]" />
     <CustomAction Id="WixSharp_AfterInstall_Action" BinaryKey="WixSharp_InitRuntime_Action_File" DllEntry="WixSharp_AfterInstall_Action" Return="check" Impersonate="no" Execute="deferred" />
     <CustomAction Id="Set_ARPNOMODIFY" Property="ARPNOMODIFY" Value="True" Return="check" Execute="immediate" />
 
@@ -120,8 +112,8 @@
     <Property Id="WixSharp_UI_INSTALLDIR" Value="INSTALLDIR" />
     <Property Id="UAC_REVEALER_ENABLED" Value="true" />
     <Property Id="UAC_WARNING" Value="Please wait for UAC prompt to appear.&#xD;&#xA;&#xD;&#xA;If it appears minimized then activate it from the taskbar." />
-    <Property Id="WixSharp_InstallDialogs" Value="WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.WelcomeDialog&#xA;WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.LicenceDialog&#xA;WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.InstallDirDialog&#xA;WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ProgressDialog&#xA;WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ExitDialog" />
-    <Property Id="WixSharp_ModifyDialogs" Value="WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.MaintenanceTypeDialog&#xA;WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ProgressDialog&#xA;WixSharp.UI, Version=1.14.7.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ExitDialog" />
+    <Property Id="WixSharp_InstallDialogs" Value="WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.WelcomeDialog&#xA;WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.LicenceDialog&#xA;WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.InstallDirDialog&#xA;WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ProgressDialog&#xA;WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ExitDialog" />
+    <Property Id="WixSharp_ModifyDialogs" Value="WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.MaintenanceTypeDialog&#xA;WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ProgressDialog&#xA;WixSharp.UI, Version=1.20.3.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2|WixSharp.UI.Forms.ExitDialog" />
     <Property Id="WixSharp_Load_Handlers" Value="WixSharpSetup, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|WixSharp_Setup.Program|Msi_Load" />
     <Property Id="WixSharp_BeforeInstall_Handlers" Value="WixSharpSetup, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|WixSharp_Setup.Program|Msi_BeforeInstall" />
     <Property Id="WixSharp_AfterInstall_Handlers" Value="WixSharpSetup, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|WixSharp_Setup.Program|Msi_AfterInstall" />
@@ -131,12 +123,10 @@
       <ComponentRef Id="Component.babe.xml_3856833599" />
       <ComponentRef Id="Component.discordLocations.xml_458976448" />
       <ComponentRef Id="Component.DiscordRPC.dll_1190609765" />
-      <ComponentRef Id="Component.DiscordRPC.xml_425935718" />
       <ComponentRef Id="Component.JumpKing.exe_3849321381" />
       <ComponentRef Id="Component.JumpKing.exe.Config_1014616334" />
       <ComponentRef Id="Component.JumpKingPlus.dll_1116931935" />
       <ComponentRef Id="Component.Newtonsoft.Json.dll_832779762" />
-      <ComponentRef Id="Component.Newtonsoft.Json.xml_832714238" />
       <ComponentRef Id="Component.JK_Plus_Logo.xnb_3497904198" />
       <ComponentRef Id="Component.merchant_nbp.xml_1844964987" />
       <ComponentRef Id="Component.merchant_quotes.xml_953321199" />

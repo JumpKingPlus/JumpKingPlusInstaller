@@ -59,24 +59,23 @@ namespace WixSharp_Setup
                                 new WixSharp.File(@"Include\babe.xml"),                             /* ---------------------------- */
                                 new WixSharp.File(@"Include\discordLocations.xml"),
                                 new WixSharp.File(@"Include\DiscordRPC.dll"),
-                                new WixSharp.File(@"Include\DiscordRPC.xml"),
                                 new WixSharp.File(@"Include\JumpKing.exe"),
                                 new WixSharp.File(@"Include\JumpKing.exe.Config"),
                                 new WixSharp.File(@"Include\JumpKingPlus.dll"),
                                 new WixSharp.File(@"Include\Newtonsoft.Json.dll"),
-                                new WixSharp.File(@"Include\Newtonsoft.Json.xml"),
                                 new WixSharp.File(@"Include\JK_Plus_Logo.xnb"),
                                 new WixSharp.File(@"Include\merchant_nbp.xml"),
                                 new WixSharp.File(@"Include\merchant_quotes.xml"),
                                 new WixSharp.File(@"Include\owl_mold_man.xml"),
                                 new WixSharp.File(@"Include\owl_shroom_guy.xml"),
                                 new WixSharp.File(@"Include\snake.xml"),
-                                new WixSharp.File(@"Include\link.xnb")));                           /* ---------------------------- */
+                                new WixSharp.File(@"Include\link.xnb")
+                            ));                                                                     /* ---------------------------- */
 
             project.GUID = new Guid("1C3139B9-5520-49DC-9219-1F0B92570528");
             project.Platform = Platform.x86;
             project.Name = "JumpKingPlus";
-            project.Version = new Version("1.5.0");
+            project.Version = new Version("1.8.2");
             project.Description = "An enhanced version of Jump King.";
             project.ControlPanelInfo.ProductIcon = "Assets\\favicon.ico";
             project.ControlPanelInfo.Manufacturer = "Phoenixx19";

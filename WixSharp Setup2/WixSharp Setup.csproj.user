@@ -3,4 +3,8 @@
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartWorkingDirectory>C:\Users\Phoenixx19\Documents\GitHub\JumpKingPlus\JumpKingPlusInstaller\WixSharp Setup2\</StartWorkingDirectory>
+    <StartArguments>"/MSBUILD:WixSharp Setup" </StartArguments>
+  </PropertyGroup>
 </Project>
