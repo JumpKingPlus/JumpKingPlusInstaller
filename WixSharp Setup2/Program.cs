@@ -18,7 +18,7 @@ namespace WixSharp_Setup
         {
             try
             {
-                if (Directory.Exists(destFolder) == false)
+                if (!Directory.Exists(destFolder))
                 {
                     CreateFolder(destFolder);
                 }
@@ -26,7 +26,7 @@ namespace WixSharp_Setup
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show($"{destination}\n{ex.Message}", "Error moving file");
             }
         }
 
@@ -34,7 +34,7 @@ namespace WixSharp_Setup
         {
             try
             {
-                if (Directory.Exists(dir))
+                if (!Directory.Exists(dir))
                 {
                     Directory.CreateDirectory(dir);
                 }
@@ -48,7 +48,7 @@ namespace WixSharp_Setup
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show($"{dir}\n{ex.Message}", "Error creating folder");
             }
         }
 
@@ -186,6 +186,7 @@ namespace WixSharp_Setup
                 MoveFile(e.InstallDir + "Content\\gui\\link.xnb", e.InstallDir + "link.xnb", e.InstallDir);
 
                 CreateFolder(e.InstallDir + "Content\\mods");
+                CreateFolder(e.InstallDir + "Content\\wardrobe");
             }
         }
 
@@ -226,6 +227,10 @@ namespace WixSharp_Setup
                 if (!Directory.Exists(e.InstallDir + "Content\\mods"))
                 {
                     Directory.CreateDirectory(e.InstallDir + "Content\\mods");
+                }
+                if (!Directory.Exists(e.InstallDir + "Content\\wardrobe"))
+                {
+                    Directory.CreateDirectory(e.InstallDir + "Content\\wardrobe");
                 }
             }
         }
